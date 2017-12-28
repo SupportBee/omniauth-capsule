@@ -4,7 +4,7 @@ module OmniAuth
   module Strategies
     class Capsule < OmniAuth::Strategies::OAuth2
       option :client_options, {
-        site: 'https://api.capsulecrm.com',
+        site: 'https://api.capsulecrm.com/api/v2',
         authorize_url: 'https://api.capsulecrm.com/oauth/authorise',
         token_url: 'https://api.capsulecrm.com/oauth/token'
       }
@@ -33,8 +33,7 @@ module OmniAuth
       end
 
       def raw_info
-        binding.pry
-        @raw_info ||= access_token.get("/api/v2/users/current").parsed["data"]
+        @raw_info ||= access_token.get("/users/current").parsed["data"]
       end
     end
   end
