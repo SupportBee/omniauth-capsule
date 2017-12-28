@@ -22,7 +22,7 @@ module OmniAuth
       info do
         {
           name: raw_info['name'],
-          email: raw_info['email']
+          username: raw_info['username']
         }
       end
 
@@ -33,7 +33,7 @@ module OmniAuth
       end
 
       def raw_info
-        @raw_info ||= access_token.get("/users/current").parsed["data"]
+        @raw_info ||= access_token.get("/users/current").parsed["user"]
       end
     end
   end
