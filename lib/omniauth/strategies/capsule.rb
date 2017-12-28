@@ -2,7 +2,7 @@ require 'omniauth-oauth2'
 
 module OmniAuth
   module Strategies
-    class CapsuleCrm < OmniAuth::Strategies::OAuth2
+    class Capsule < OmniAuth::Strategies::OAuth2
       option :client_options, {
         site: 'https://api.capsulecrm.com',
         authorize_url: 'https://api.capsulecrm.com/oauth/authorise',
@@ -34,7 +34,7 @@ module OmniAuth
 
       def raw_info
         binding.pry
-        @raw_info ||= access_token.get("/api/v2/users").parsed["data"]
+        @raw_info ||= access_token.get("/api/v2/users/current").parsed["data"]
       end
     end
   end

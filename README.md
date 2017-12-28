@@ -1,18 +1,18 @@
-# omniauth-capsulecrm
+# omniauth-capsule
 
 This is the OmniAuth strategy for authenticating to [Capsule CRM](https://www.capsulecrm.com). To use it, you'll need to create an Application and copy the Client ID and Client Secret.
 
 ## Installation
 
 ```ruby
-gem 'omniauth-capsulecrm', git: "https://github.com/SupportBee/omniauth-capsulecrm"
+gem 'omniauth-capsule', git: "https://github.com/SupportBee/omniauth-capsule"
 ```
 
 ## Basic Usage
 
 ```ruby
 use OmniAuth::Builder do
-  provider :capsulecrm, ENV['client_id'], ENV['client_secret']
+  provider :capsule, ENV['client_id'], ENV['client_secret']
 end
 ```
 
@@ -28,4 +28,4 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
