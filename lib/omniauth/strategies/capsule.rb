@@ -13,6 +13,10 @@ module OmniAuth
         super
       end
 
+      def authorize_params
+        super.tap { |p| p[:scope] = 'read write' }
+      end
+
       def callback_phase
         super
       end
