@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["pranav@supportbee.com"]
   gem.description   = %q{OmniAuth strategy for Capsule CRM.}
   gem.summary       = %q{OmniAuth strategy for Capsule CRM.}
-  gem.homepage      = "https://github.com/SupportBee/omniauth-capsulecrm"
+  gem.homepage      = "https://github.com/SupportBee/omniauth-capsule"
   gem.license       = "MIT"
 
   # gem.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
