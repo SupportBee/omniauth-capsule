@@ -1,6 +1,8 @@
 # omniauth-capsule
 
-This is the OmniAuth strategy for authenticating to [Capsule CRM](https://www.capsulecrm.com). To use it, you'll need to create an Application and copy the Client ID and Client Secret.
+OmniAuth strategy for [Capsule CRM](https://www.capsulecrm.com) OAuth.
+
+To use it, you'll need to create an Application and copy the Client ID and Client Secret.
 
 ## Installation
 
